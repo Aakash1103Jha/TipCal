@@ -56,15 +56,39 @@
 		119262DD25BF0F4B00CCB3FD /* TipCal */ = {
 			isa = PBXGroup;
 			children = (
+				119262F525BF0F6300CCB3FD /* Controller */,
+				119262F425BF0F5D00CCB3FD /* View */,
+				119262F325BF0F5600CCB3FD /* Model */,
 				119262DE25BF0F4B00CCB3FD /* AppDelegate.swift */,
 				119262E025BF0F4B00CCB3FD /* SceneDelegate.swift */,
-				119262E225BF0F4B00CCB3FD /* ViewController.swift */,
-				119262E425BF0F4B00CCB3FD /* Main.storyboard */,
 				119262E725BF0F4C00CCB3FD /* Assets.xcassets */,
-				119262E925BF0F4C00CCB3FD /* LaunchScreen.storyboard */,
 				119262EC25BF0F4C00CCB3FD /* Info.plist */,
 			);
 			path = TipCal;
+			sourceTree = "<group>";
+		};
+		119262F325BF0F5600CCB3FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		119262F425BF0F5D00CCB3FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				119262E425BF0F4B00CCB3FD /* Main.storyboard */,
+				119262E925BF0F4C00CCB3FD /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		119262F525BF0F6300CCB3FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				119262E225BF0F4B00CCB3FD /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
