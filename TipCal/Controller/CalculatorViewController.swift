@@ -60,6 +60,9 @@ class CalculatorViewController: UIViewController {
         print(tip)
         print(billAmountTextField.text!)
         
+        
+        self.performSegue(withIdentifier: "showFinalTip", sender: self)
+        
     }
     
     
