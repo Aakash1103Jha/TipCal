@@ -23,7 +23,7 @@
                         </userGuides>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your bill amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQO-Lz-GmZ">
-                                <rect key="frame" x="40" y="55.333333333333343" width="180" height="20.333333333333336"/>
+                                <rect key="frame" x="40" y="55.333333333333336" width="180" height="20.333333333333336"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="Zvs-r0-IIK"/>
                                 </constraints>
@@ -32,11 +32,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Voe-av-GSb" userLabel="billAmountTextField">
-                                <rect key="frame" x="37.666666666666657" y="95.666666666666686" width="300" height="40.000000000000014"/>
+                                <rect key="frame" x="37.666666666666657" y="95.666666666666671" width="300" height="40.000000000000014"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4DQ-ec-NTr"/>
                                     <constraint firstAttribute="width" constant="300" id="CWm-rD-pbY"/>
                                 </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>

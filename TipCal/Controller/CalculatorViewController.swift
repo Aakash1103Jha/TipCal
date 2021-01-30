@@ -21,6 +21,11 @@ class CalculatorViewController: UIViewController {
     var finalTip = 0
     var totalBill = 0.0
     
+    
+    override func viewDidLoad() {
+        initializeHideKeyboard()
+    }
+    
     //stepper that changes tip value
     @IBAction func tipStepChanged(_ sender: UIStepper) {
         tipSplitValue.text = String(Int(sender.value))
@@ -49,7 +54,7 @@ class CalculatorViewController: UIViewController {
         let billAmount = Double(billAmountTextField.text!)
         
         //setting new values for tip
-        tip =  billAmount! + (billAmount!*(tipAsNumber/100))
+        tip =  (billAmount!*(tipAsNumber/100))
         
     }
     
@@ -58,13 +63,32 @@ class CalculatorViewController: UIViewController {
     //Calculate button to display final tip amount
     @IBAction func tipCalculatePressed(_ sender: UIButton) {
         print(tip)
-        print(billAmountTextField.text!)
+//        print(billAmountTextField.text!)
         
-        
+
         self.performSegue(withIdentifier: "showFinalTip", sender: self)
-        
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showFinalTip" {
+            let destinationVC = segue.destination as! ResultsViewController
+            destinationVC.finalTipAmount = String(tip)
+        }
+    }
     
+    @objc func dismissMyKeyboard(){
+    //endEditing causes the view (or one of its embedded text fields) to resign the first responder status.
+    //In short- Dismiss the active keyboard.
+       view.endEditing(true)
+    }
+    
+    func initializeHideKeyboard(){
+     //Declare a Tap Gesture Recognizer which will trigger our dismissMyKeyboard() function
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissMyKeyboard))
+     //Add this tap gesture recognizer to the parent view
+        view.addGestureRecognizer(tap)
+     }
+     
 }
-

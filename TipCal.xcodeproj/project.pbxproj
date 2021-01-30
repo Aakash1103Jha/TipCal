@@ -14,6 +14,7 @@
 		119262E625BF0F4B00CCB3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119262E425BF0F4B00CCB3FD /* Main.storyboard */; };
 		119262E825BF0F4C00CCB3FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119262E725BF0F4C00CCB3FD /* Assets.xcassets */; };
 		119262EB25BF0F4C00CCB3FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119262E925BF0F4C00CCB3FD /* LaunchScreen.storyboard */; };
+		11AC586E25C5ADBD002DE3D3 /* calculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC586D25C5ADBD002DE3D3 /* calculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		119262E725BF0F4C00CCB3FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		119262EA25BF0F4C00CCB3FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		119262EC25BF0F4C00CCB3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AC586D25C5ADBD002DE3D3 /* calculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		119262F325BF0F5600CCB3FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				11AC586D25C5ADBD002DE3D3 /* calculatorBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				119262E325BF0F4B00CCB3FD /* CalculatorViewController.swift in Sources */,
+				11AC586E25C5ADBD002DE3D3 /* calculatorBrain.swift in Sources */,
 				119262DF25BF0F4B00CCB3FD /* AppDelegate.swift in Sources */,
 				119262E125BF0F4B00CCB3FD /* SceneDelegate.swift in Sources */,
 				113119C825C4821100FA9881 /* ResultsViewController.swift in Sources */,

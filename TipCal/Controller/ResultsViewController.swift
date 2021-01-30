@@ -12,17 +12,18 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet weak var totalTipLabel: UILabel!
     
-    
+    var finalTipAmount = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        totalTipLabel.text = finalTipAmount
         
         
         
 }
     
     @IBAction func reCalButtonPressed(_ sender: UIButton) {
+        
         
     }
     
