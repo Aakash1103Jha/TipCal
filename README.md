@@ -1,4 +1,7 @@
 # TipCal
+
+https://img.shields.io/github/languages/code-size/Aakash1103Jha/TipCal?style=social
+
 Written in Swift, on Xcode.
 
 • A simple calculator that lets you calculate how much tip you owe on your bill amount. 
